@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+			integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<title>CV</title>
+	</head>
+	<style>
+		* {
+			margin: 0px;
+			padding: 0px;
+			box-sizing: border-box;
+			/* border: 0.1px solid; */
+			font-size: 16px;
+			font-family: Arial, Helvetica, sans-serif; 
+		}
+		@page {
+			size: A4;
+			margin: 0;
+		}
+		body {
+			width: 210mm;
+			margin: 0;
+		}
+		.page {
+			page-break-before: always;
+			width: 210mm;
+			height: 297mm;
+			margin: 0;
+		}
+		.left-column {
+			/* background-color: aqua; */
+			height: 100%;
+		}
+		.right-column {
+			/* background-color: rgb(17, 0, 255); */
+			height: 100%;
+		}
+		h4, h5 {
+			font-weight: bold;
+		}
+	</style>
+	<body>
+		<div class="page" style="padding: 65px; border: 0.5px solid; " >
+			<div style="height: 200px; position : relative; background-color: #2c63b5; margin: -65px; z-index: -1;"></div>
+
+			<div class="" style="position : relative; top: -90px;">
+
+				<div class="avatar d-flex col-12">
+					<div
+						class="col-4"
+						style="
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							height: 214px;
+						"
+					>
+						<img
+							src="Bản sao 1.jpg"
+							alt=""
+							style="width: 100%; height: 100%; border-radius: 50%"
+						/>
+					</div>
+					<div class="w-100" style="height: 150px">
+						<h3 style="margin-top: 30px; text-align: center; color: white; font-size: 34px">
+							Nguyễn Minh Nhật
+						</h3>
+						<h4 style="text-align: center; color: white;">Java Developer</h4>
+					</div>
+				</div>
+				<div class="introduce mt-3" style="text-align: justify;" >
+					<!-- <h4>Giới thiệu bản thân</h4> -->
+					<ul>
+						<li>Tôi là lập trình viên Java vừa tốt nghiệp tại CodeGym Huế.</li>
+						<li>
+							Tôi có đam mê với lập trình và luôn sẵn sàng để học hỏi thêm kiến
+							thức mới.
+						</li>
+
+						<li>
+							Mục tiêu của tôi là được làm việc trong một môi trường chuyên
+							nghiệp, nơi tôi có thể vận dụng các kỹ năng, kiến thức của mình
+							vào các dự án thực tế.
+						</li>
+						<li>
+							Nếu có thể tôi muốn gắn bó với công ty trong những năm tới, đồng
+							thời nâng cấp bản thân để trở thành một Mid-Level hoặc Senior
+							Developer.
+						</li>
+					</ul>
+				</div>
+				<div class="info mt-1">
+					<h4>Thông tin cá nhân</h4>
+					<div>
+						<div class="d-flex">
+							<div class="col-6">
+								<ul style="list-style: none; margin-left: -30px">
+									<li>
+										<i
+											class="fa-regular fa-envelope me-2"
+											style="width: 20px; text-align: center"
+										></i
+										>nhat01479@gmail.com
+									</li>
+									<li>
+										<i
+											class="fa-solid fa-cake-candles me-2"
+											style="width: 20px; text-align: center"
+										></i
+										>07/10/1994
+									</li>
+									<li><i class="fa-brands fa-github" style="width: 20px; text-align: center"></i></li>
+								</ul>
+							</div>
+							<div class="col-6">
+								<ul style="list-style: none; margin-left: -30px">
+									<li>
+										<i
+											class="fa-solid fa-phone me-2"
+											style="width: 20px; text-align: center"
+										></i
+										>0985785189
+									</li>
+									<li>
+										<i
+											class="fa-solid fa-location-dot me-2"
+											style="width: 20px; text-align: center"
+										></i
+										>Hương Phong, TP Huế
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="skill mt-1">
+					<h4>Kỹ năng</h4>
+					<div>
+						<div class="d-flex">
+							<div class="col-6">
+								<ul style="list-style: disc; margin-left: -30px">
+									<h6>Front-End</h6>
+									<li style="margin-left: 20px">HTML, CSS, Bootstrap</li>
+									<li style="margin-left: 20px">JavaScripts ES6</li>
+									<li style="margin-left: 20px">ReactJS và Material UI</li>
+								</ul>
+							</div>
+							<div class="col-6">
+								<ul style="list-style: disc; margin-left: -30px">
+									<h6>Back-End</h6>
+									<li style="margin-left: 20px">Java Core, Spring Framework</li>
+									<li style="margin-left: 20px">
+										Cấu trúc dữ liệu và giải thuật
+									</li>
+									<li style="margin-left: 20px">RESTful API</li>
+								</ul>
+							</div>
+						</div>
+						<div class="d-flex">
+							<div class="col-6">
+								<ul style="list-style: disc; margin-left: -30px">
+									<h6>Database</h6>
+									<li style="margin-left: 20px">MySQL Workbench</li>
+								</ul>
+							</div>
+							<div class="col-6">
+								<ul style="list-style: disc; margin-left: -30px">
+									<h6>Quản lý mã nguồn</h6>
+									<li style="margin-left: 20px">Git, GitHub và GitLab</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="education mt-1">
+					<h4>Học vấn</h4>
+					<div class="d-flex col-12">
+						<div class="col-6">
+							<ul style="list-style: disc; margin-left: -30px">
+								CodeGym Huế
+								<li style="margin-left: 20px">
+									Khóa Học Bootcamp Java Web Fullstack
+								</li>
+								<li style="margin-left: 20px">Thời gian: 03/2023 - 10/2023</li>
+							</ul>
+						</div>
+						<div class="col-6">
+							<ul style="list-style: disc; margin-left: -30px">
+								Đại học Kinh tế Huế
+								<li style="margin-left: 20px">
+									Chuyên ngành Quản trị kinh doanh
+								</li>
+								<li style="margin-left: 20px">Thời gian: 2012 - 2016</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="reference">
+					<h4>Người tham chiếu</h4>
+					<ul style="list-style: disc; margin-left: -10px">
+						<li>Họ và tên: Nguyễn Hữu Anh Khoa</li>
+							<li> Chức vụ: Giám đốc đào tạo CodeGym Huế</li>
+							<li>Điện thoại: 0935 216 417</li>
+							<li>Email: khoa.nguyen@codegym.vn</li>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="page" style="padding: 75px; border: 0.5px solid">
+			<div class="project">
+				<h4 class="">Dự án tham gia</h4>
+				<div style="border-top: 0.5px solid grey">
+					<h5 style="margin-top: 5px">
+						Hệ thống quản lý rạp chiếu phim Cinestar
+					</h5>
+					<p style="margin: 3px">
+						<span><strong>Loại dự án:</strong></span> Dự án nhóm (đầu tháng
+						09/2023 - cuối tháng 10/2023)
+					</p>
+					<p style="margin: 3px">
+						<span><strong>Mô tả dự án:</strong></span>
+					</p>
+					<p style="margin: 3px">
+						Dự án mô phỏng lại trang web của Cinestar cho phép người dùng có
+						thêm xem lịch chiếu, đặt vé online hoặc mua vé tại quầy. Ngoài ra
+						cũng cho phép quản lý nhân viên, khách hàng, phim, lịch chiếu, thống
+						kê doanh thu trên toàn hệ thống.
+					</p>
+					<p style="margin: 3px">
+						<span><strong>Số lượng thành viên:</strong></span> 4 thành viên
+					</p>
+					<p style="margin: 3px">
+						<span><strong>Vai trò bản thân trong dự án:</strong></span> thành
+						viên nhóm
+					</p>
+					<ul style="margin-bottom: 0">
+						<li>Tham gia phân tích nghiệp vụ, nghiên cứu database</li>
+						<li>
+							Trang quản lý: quản lý nhân viên, khách hàng, tài khoản đăng nhập.
+						</li>
+						<li>
+							Trang khách hàng: làm giao diện và API quản lý việc đăng ký, đăng
+							nhập, hiển thị lịch chiếu phim và gửi vé tới email cho khách hàng.
+						</li>
+						<li>
+							Trang thu ngân: giao diện trang thu ngân, trang mua vé và hiển thị
+							lịch chiếu phim.
+						</li>
+					</ul>
+					<p style="margin: 3px">
+						<span><strong>Công nghệ sử dụng:</strong></span>
+					</p>
+					<ul style="margin-bottom: 0">
+						<li>
+							Làm giao diện bằng ReactJS, Material UI, quản lý state bằng Redux
+						</li>
+						<li>Làm API bằng Java Spring Boot</li>
+						<li>Quản lý mã nguồn bằng Git và GitLab</li>
+						<li>Database: MySQL Workbench</li>
+					</ul>
+					<p style="margin: 3px">
+						<span><strong>Link dự án:</strong></span>
+					</p>
+				</div>
+				<div style="border-top: 0.5px solid grey; margin-top: 10px">
+					<h5 style="margin-top: 5px">
+						Ứng dụng thanh toán hoá đơn quầy Billiard
+					</h5>
+					<p style="margin: 3px">
+						<span><strong>Loại dự án:</strong></span> Dự án nhóm (tháng 07/2023)
+					</p>
+					<p style="margin: 3px">
+						<span><strong>Mô tả dự án:</strong></span>
+					</p>
+					<p style="margin: 3px">
+						Dự án quản lý bàn, thời gian chơi và các loại đồ ăn thức uống để
+						thanh toán hoá đơn cho khách hàng.
+					</p>
+					<p style="margin: 3px">
+						<span><strong>Số lượng thành viên:</strong></span> 2 thành viên
+					</p>
+					<p style="margin: 3px">
+						<span><strong>Vai trò bản thân trong dự án:</strong></span> thành
+						viên nhóm
+					</p>
+					<ul style="margin-bottom: 0">
+						<li>Tham gia phân tích nghiệp vụ, nghiên cứu database</li>
+						<li>
+							Làm giao diện và API để quản lý đồ ăn, thức uống và hoá đơn.
+						</li>
+						<li>Làm giao diện và API để hiển thị giỏ hàng.</li>
+						<li>Lưu giỏ hàng thành hoá đơn</li>
+					</ul>
+					<p style="margin: 3px">
+						<span><strong>Công nghệ sử dụng:</strong></span>
+					</p>
+					<ul style="margin-bottom: 0">
+						<li>Làm giao diện bằng HTML, CSS, JQuery và Boostrap.</li>
+						<li>Làm API bằng Java Spring Boot</li>
+						<li>Quản lý mã nguồn bằng Git và GitHub</li>
+						<li>Database: MySQL Workbench</li>
+					</ul>
+					<p style="margin: 3px">
+						<span><strong>Link dự án:</strong></span>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+		></script>
+
+		<script></script>
+	</body>
+</html>
