@@ -24,7 +24,7 @@
 			padding: 0px;
 			box-sizing: border-box;
 			/* border: 0.1px solid; */
-			font-size: 16px;
+			font-size: 14px;
 			font-family: Arial, Helvetica, sans-serif; 
 		}
 		@page {
@@ -52,6 +52,12 @@
 		h4, h5, h6 {
 			font-weight: bold;
 		}
+		.my-background {
+			/* background-color: rgb(155, 191, 245); */
+			/* background: linear-gradient(135deg, rgb(94, 252, 232) 10%, rgb(115, 110, 254) 100%); */
+			background: radial-gradient(circle at 10% 20%, rgb(99, 202, 236) 0%, rgb(162, 162, 236) 90.2%);			font-size: 20.5px;
+			border-radius: 4px;
+		}
 		@media print {
       .page-number::after {
         content: counter(page);
@@ -63,9 +69,12 @@
       bottom: 10px;
       right: 10px;
     }
+		a {
+			text-decoration: none;
+		}
 	</style>
 	<body>
-			<div class="page " style="padding: 75px; border: 0.5px solid; " >
+			<div class="page " style="padding: 75px; border: 0.5px solid; position: relative; " >
 				<div style="height: 200px; position : relative; background-color: #2c63b5; margin: -75px; z-index: -1;"></div>
 	
 				<div class="" style="position : relative; top: -90px;">
@@ -87,34 +96,34 @@
 							/>
 						</div>
 						<div class="w-100" style="height: 150px">
-							<h3 style="margin-top: 30px; text-align: center; color: white; font-size: 34px">
+							<h3 style="margin-top: 40px; text-align: center; color: white; font-size: 34px">
 								Nguyễn Minh Nhật
 							</h3>
-							<h4 style="text-align: center; color: white;">Java Developer</h4>
+							<h4 style="text-align: center; color: white;">Fresher Java Web </h4>
+
 						</div>
 					</div>
 					<div class="introduce mt-3" style="text-align: justify;" >
-						<!-- <h4>Giới thiệu bản thân</h4> -->
+						<!-- <h4 class="my-background">Giới thiệu bản thân</h4> -->
 						<ul>
-							<li>Tôi là lập trình viên Java vừa tốt nghiệp tại CodeGym Huế.</li>
+							<li>Tôi là người chuyển ngành, vừa tốt nghiệp khoá học Java Bootcamp tại CodeGym Huế.</li>
 							<li>
 								Tôi có đam mê với lập trình và luôn sẵn sàng để học hỏi thêm kiến
 								thức mới.
 							</li>
 	
 							<li>
-								Mục tiêu của tôi là được làm việc trong một môi trường chuyên
-								nghiệp, nơi tôi có thể vận dụng các kỹ năng, kiến thức của mình
+								Mục tiêu của tôi là được làm việc trong một môi trường doanh nghiệp, nơi tôi có thể vận dụng các kỹ năng, kiến thức của mình
 								vào các dự án thực tế.
 							</li>
 							<li>
-								Nếu có thể tôi muốn gắn bó với công ty trong những năm tới, đồng
-								thời nâng cấp bản thân để trở thành một Junior hoặc Mid-Level Developer.
+								Trong một năm tới, tôi muốn cải thiện khả năng lập trình và trở thành Junior Developer.
 							</li>
+							<li>Trong dài hạn (3 - 5 năm) tôi muốn nâng cấp bản thân để trở thành một Mid-Level hoặc Senior Developer.</li>
 						</ul>
 					</div>
-					<div class="info mt-1">
-						<h4>Thông tin cá nhân</h4>
+					<div class="info">
+						<div class="my-background" style="width: 200px;  margin-bottom: 15px;"><h4 style="line-height: 35px; margin-left: 8px;">Thông tin cá nhân</h4></div>
 						<div>
 							<div class="d-flex">
 								<div class="col-6">
@@ -126,14 +135,21 @@
 											></i
 											>nhat01479@gmail.com
 										</li>
-										<li>
+										<!-- <li>
 											<i
 												class="fa-solid fa-cake-candles me-2"
 												style="width: 20px; text-align: center"
 											></i
 											>07/10/1994
+										</li> -->
+										<li>
+											<i
+												class="fa-solid fa-location-dot me-2"
+												style="width: 20px; text-align: center"
+											></i
+											>Hương Phong, TP Huế
 										</li>
-										<li><i class="fa-brands fa-github me-2" style="width: 20px; text-align: center"></i><a href="https://bit.ly/cv-nhat01479" style="text-decoration: none;">bit.ly/cv-nhat01479</a></li>
+										<li><i class="fa-brands fa-github me-2" style="width: 20px; text-align: center"></i>GitHub: <a href="https://bit.ly/git-nhat01479" style="text-decoration: none;">bit.ly/git-nhat01479</a></li>
 									</ul>
 								</div>
 								<div class="col-6">
@@ -145,61 +161,38 @@
 											></i
 											>0985785189
 										</li>
-										<li>
+										<!-- <li>
 											<i
 												class="fa-solid fa-location-dot me-2"
 												style="width: 20px; text-align: center"
 											></i
 											>Hương Phong, TP Huế
-										</li>
+										</li> -->
+										<li>
+											<i 
+												class="fa-solid fa-link me-2"
+											  style="width: 20px; text-align: center"
+											></i>Portfolio: <a href="https://nhat01479-portfolio.vercel.app/">bit.ly/nhatFolio/</a></li>
 									</ul>
 								</div>
 							</div>
 						</div>
 					</div>
-	
-					<div class="skill mt-1">
-						<h4>Kỹ năng</h4>
-						<div>
-							<div class="d-flex">
-								<div class="col-6">
-									<ul style="list-style: disc; margin-left: -30px">
-										<h6>Front-End</h6>
-										<li style="margin-left: 20px">HTML, CSS, Bootstrap</li>
-										<li style="margin-left: 20px">JavaScripts ES6</li>
-										<li style="margin-left: 20px">ReactJS và Material UI</li>
-									</ul>
-								</div>
-								<div class="col-6">
-									<ul style="list-style: disc; margin-left: -30px">
-										<h6>Back-End</h6>
-										<li style="margin-left: 20px">Java Core, Spring Framework</li>
-										<li style="margin-left: 20px">
-											Cấu trúc dữ liệu và giải thuật
-										</li>
-										<li style="margin-left: 20px">RESTful API</li>
-									</ul>
-								</div>
-							</div>
-							<div class="d-flex">
-								<div class="col-6">
-									<ul style="list-style: disc; margin-left: -30px">
-										<h6>Database</h6>
-										<li style="margin-left: 20px">MySQL Workbench</li>
-									</ul>
-								</div>
-								<div class="col-6">
-									<ul style="list-style: disc; margin-left: -30px">
-										<h6>Quản lý mã nguồn</h6>
-										<li style="margin-left: 20px">Git, GitHub và GitLab</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="education mt-1">
-						<h4>Học vấn</h4>
+
+					<div class="education" style="margin-top: -5px;">
+						<div class="my-background" style="width: 100px;  margin-bottom: 15px;"><h4 style="line-height: 35px; margin-left: 8px;">Học vấn</h4></div>
 						<div class="d-flex col-12">
+							<div class="col-6">
+								<ul style="list-style: disc; margin-left: -30px">
+									<h6>Đại học Kinh tế Huế
+									</h6>
+									<li style="margin-left: 20px">
+										Chuyên ngành: Quản trị kinh doanh
+									</li>
+									<li style="margin-left: 20px">Thời gian: 2012 - 2016</li>
+								</ul>
+							</div>
+
 							<div class="col-6">
 								<ul style="list-style: disc; margin-left: -30px">
 									<h6>CodeGym Huế</h6>
@@ -209,37 +202,88 @@
 									<li style="margin-left: 20px">Thời gian: 03/2023 - 10/2023</li>
 								</ul>
 							</div>
-							<div class="col-6">
-								<ul style="list-style: disc; margin-left: -30px">
-									<h6>Đại học Kinh tế Huế
-									</h6>
-									<li style="margin-left: 20px">
-										Chuyên ngành Quản trị kinh doanh
-									</li>
-									<li style="margin-left: 20px">Thời gian: 2012 - 2016</li>
-								</ul>
+
+						</div>
+					</div>
+	
+					<div class="skill">
+						<div class="my-background" style="width: 100px; margin-bottom: 15px;"><h4 style="line-height: 35px; margin-left: 8px; ">Kỹ năng</h4></div>
+						<div>
+							<div class="d-flex">
+								<div class="col-6">
+									<ul style="list-style: disc; margin-left: -30px">
+										<h6>Front-End</h6>
+										<li style="margin-left: 20px">HTML, CSS, JavaScripts (ES6) </li>
+										<li style="margin-left: 20px">jQuery và AJAX </li>
+										<li style="margin-left: 20px">Bootstrap v5.3 và Material UI v5.14</li>
+										<li style="margin-left: 20px">ReactJS v18.2.0</li>
+									</ul>
+								</div>
+								<div class="col-6">
+									<ul style="list-style: disc; margin-left: -30px">
+										<h6>Back-End</h6>
+										<li style="margin-left: 20px">Java Core, Spring Framework</li>
+										<li style="margin-left: 20px">
+											Lập trình hướng đối tượng (OPP)
+										</li>
+										<li style="margin-left: 20px">
+											Cấu trúc dữ liệu
+										</li>
+										<li style="margin-left: 20px">RESTful API và Postman</li>
+									</ul>
+								</div>
+							</div>
+							<div class="d-flex">
+								<div class="col-6">
+									<ul style="list-style: disc; margin-left: -30px">
+										<h6>Database</h6>
+										<li style="margin-left: 20px">MySQL</li>
+									</ul>
+								</div>
+								<div class="col-6">
+									<ul style="list-style: disc; margin-left: -30px">
+										<h6>Quản lý mã nguồn</h6>
+										<li style="margin-left: 20px">Git, GitHub và GitLab</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="d-flex">
+								<div class="col-6">
+									<ul style="list-style: disc; margin-left: -30px">
+										<h6>Các IDE có thể sử dụng:</h6>
+										<li style="margin-left: 20px">Visual Studio Code v1.84.1</li>
+										<li style="margin-left: 20px">IntelliJ IDEA 2023.1</li>
+									</ul>
+								</div>
+								<div class="col-6">
+									<ul style="list-style: disc; margin-left: -30px">
+										<h6>Kỹ năng khác</h6>
+										<li style="margin-left: 20px">Làm việc với mô hình Scrum - Agile</li>
+										<li style="margin-left: 20px">Quản lý công việc bằng Jira</li>
+										<li style="margin-left: 20px">Kỹ năng làm việc nhóm</li> 
+										<li style="margin-left: 20px">Kỹ năng tự học, research</li> 
+									</ul>
+								</div>
+
 							</div>
 						</div>
 					</div>
-					<div class="reference">
-						<h4>Người tham chiếu</h4>
-						<ul style="list-style: disc; margin-left: -10px;">
-							<li>Họ và tên: Nguyễn Hữu Anh Khoa</li>
-								<li> Chức vụ: Giám đốc đào tạo CodeGym Huế</li>
-								<li>Điện thoại: 0935 216 417</li>
-								<li>Email: khoa.nguyen@codegym.vn</li>
-							</li>
-						</ul>
-					</div>
-					<span style="position: absolute; bottom: -65px; right: 0; opacity: 0.7;">Trang 1/2</span>
+
+			
 
 				</div>
+				<div  style="position: absolute; bottom: 0px; margin-left: -75px; height: 40px; display: flex; justify-content: end;" class="col-12">
+					<span style="margin-right: 75px; opacity: 0.7;">Trang 1/4</span>
+				</div>
+
 			</div>
-			<div class="page" style="padding: 75px; border: 0.5px solid">
+			<div class="page" style="padding: 75px; border: 0.5px solid; position: relative;">
 				<div class="project">
-					<h4 class="">Dự án tham gia</h4>
-					<div style="border-top: 0.5px solid grey">
-						<h5 style="margin-top: 5px">
+					<div class="my-background" style="width: 170px;"><h4 style="line-height: 35px; margin-left: 8px;">Dự án tham gia</h4></div>
+
+					<div style="border-top: 0.5px solid grey; margin-top: 10px">
+						<h5 style="margin-top: 15px">
 							Hệ thống quản lý rạp chiếu phim Cinestar
 						</h5>
 						<p style="margin: 3px">
@@ -249,7 +293,7 @@
 						<p style="margin: 3px">
 							<span><strong>Mô tả dự án:</strong></span>
 						</p>
-						<p style="margin: 3px">
+						<p style="margin: 3px; text-align: justify;">
 							Dự án mô phỏng lại trang web của Cinestar cho phép người dùng có
 							thêm xem lịch chiếu, đặt vé online hoặc mua vé tại quầy. Ngoài ra
 							cũng cho phép quản lý nhân viên, khách hàng, phim, lịch chiếu, thống
@@ -285,59 +329,199 @@
 							</li>
 							<li>Làm API bằng Java Spring Boot</li>
 							<li>Quản lý mã nguồn bằng Git và GitLab</li>
-							<li>Database: MySQL Workbench</li>
+							<li>Database: MySQL</li>
+							<li>Upload ảnh bằng Cloudinary</li>
 						</ul>
-						<p style="margin: 3px">
-							<span><strong>Link dự án:</strong></span>
-						</p>
+						<div>
+							<div style="margin: 3px">
+								<span><strong>Quy trình phát triển dự án:</strong></span>
+								<ul>
+									<li><span>Link plan dự án: <a href="https://bit.ly/3skjaId">bit.ly/3skjaId</a></span></li>
+								<li><span style="width: 200px;">Link database dự án: <a href="https://bit.ly/3FLvwfF">bit.ly/3FLvwfF</a></span></li>
+									<li><span style="width: 200px;">Link backlog: <a href="https://bit.ly/49sMoWa">bit.ly/49sMoWa</a></span></li>
+									<li>	<span>Link GitHub dự án:</span>
+										<ul>
+											<li>Trang quản lý: <a href="https://bit.ly/cinestar-dashboard-v2">bit.ly/cinestar-dashboard-v2</a></li>
+											<li>Trang khách hàng: <a href="https://bit.ly/cinestar-customer-v2">bit.ly/cinestar-customer-v2</a></li>
+											<li>Trang API: <a href="https://bit.ly/cinestar-api-v2">bit.ly/cinestar-api-v2</a></li>
+										</ul>
+									</li>
+									<li><span>Link deploy dự án:</span>
+										<ul>
+											<li>Trang chủ: <a href="https://cinestar.onedev.top/">cinestar.onedev.top/</a></li>
+											<li>Trang quản lý và thu ngân: <a href="https://cinestar.onedev.top/cp/">cinestar.onedev.top/cp/</a></li>
+											<li>Trang swagger: <a href="https://cinestar.onedev.top/swagger-ui/">https://cinestar.onedev.top/swagger-ui/</a></li>
+										</ul>
+									</li>
+								</ul>
+								<p style="margin: 3px">
+									<span><strong>Kinh nghiệm thu được:</strong></span>
+								</p>
+									<ul>
+										<li>Cải thiện khả năng sử dụng các hooks cơ bản của ReactJS</li>
+										<li>Học được cách sử dụng Redux để quản lý state</li>
+										<li>Học được cách sử dụng thư viện Material UI</li>
+										<li>Học hỏi được quy trình xây dựng dự án, cách chia sẻ và
+											phân chia công việc trong nhóm.
+										</li>
+										<li>Học được cách sử dụng swagger để test API</li>
+									</ul>
+								</p>
+
+							</div>
+
+						</div>
 					</div>
-					<div style="border-top: 0.5px solid grey; margin-top: 10px">
-						<h5 style="margin-top: 5px">
-							Ứng dụng thanh toán hoá đơn quầy Billiard
-						</h5>
-						<p style="margin: 3px">
-							<span><strong>Loại dự án:</strong></span> Dự án nhóm (tháng 07/2023)
-						</p>
-						<p style="margin: 3px">
-							<span><strong>Mô tả dự án:</strong></span>
-						</p>
-						<p style="margin: 3px">
-							Dự án quản lý bàn, thời gian chơi và các loại đồ ăn thức uống để
-							thanh toán hoá đơn cho khách hàng.
-						</p>
-						<p style="margin: 3px">
-							<span><strong>Số lượng thành viên:</strong></span> 2 thành viên
-						</p>
-						<p style="margin: 3px">
-							<span><strong>Vai trò bản thân trong dự án:</strong></span> thành
-							viên nhóm
-						</p>
-						<ul style="margin-bottom: 0">
-							<li>Tham gia phân tích nghiệp vụ, nghiên cứu database</li>
-							<li>
-								Làm giao diện và API để quản lý đồ ăn, thức uống và hoá đơn.
-							</li>
-							<li>Làm giao diện và API để hiển thị giỏ hàng.</li>
-							<li>Lưu giỏ hàng thành hoá đơn</li>
-						</ul>
-						<p style="margin: 3px">
-							<span><strong>Công nghệ sử dụng:</strong></span>
-						</p>
-						<ul style="margin-bottom: 0">
-							<li>Làm giao diện bằng HTML, CSS, JQuery và Boostrap.</li>
-							<li>Làm API bằng Java Spring Boot</li>
-							<li>Quản lý mã nguồn bằng Git và GitHub</li>
-							<li>Database: MySQL Workbench</li>
-						</ul>
-						<p style="margin: 3px">
-							<span><strong>Link dự án:</strong></span>
-						</p>
-					</div>
-					<div style="position: relative;">
-						<span style="position: absolute; bottom: -40px; right: 0; opacity: 0.7;">Trang 2/2</span>
-					</div>
+
+				</div>
+				<div  style="position: absolute; bottom: 0px; margin-left: -75px; height: 40px; display: flex; justify-content: end;" class="col-12">
+					<span style="margin-right: 75px; opacity: 0.7;">Trang 2/4</span>
 				</div>
 
+			</div>
+
+			<div class="page" style="padding: 75px; border: 0.5px solid; position: relative;">
+				<div>
+					<h5>
+						Ứng dụng thanh toán hoá đơn quầy Billiard
+					</h5>
+					<p style="margin: 3px">
+						<span><strong>Loại dự án:</strong></span> Dự án nhóm (tháng 07/2023)
+					</p>
+					<p style="margin: 3px">
+						<span><strong>Mô tả dự án:</strong></span>
+					</p>
+					<p style="margin: 3px">
+						Dự án quản lý bàn, thời gian chơi và các loại đồ ăn thức uống để
+						thanh toán hoá đơn cho khách hàng.
+					</p>
+					<p style="margin: 3px">
+						<span><strong>Số lượng thành viên:</strong></span> 2 thành viên
+					</p>
+					<p style="margin: 3px">
+						<span><strong>Vai trò bản thân trong dự án:</strong></span> thành
+						viên nhóm
+					</p>
+					<ul style="margin-bottom: 0">
+						<li>Tham gia phân tích nghiệp vụ, nghiên cứu database</li>
+						<li>
+							Làm giao diện và API để quản lý đồ ăn, thức uống và hoá đơn.
+						</li>
+						<li>Làm giao diện và API để hiển thị giỏ hàng.</li>
+						<li>Lưu giỏ hàng thành hoá đơn</li>
+					</ul>
+					<p style="margin: 3px">
+						<span><strong>Công nghệ sử dụng:</strong></span>
+					</p>
+					<ul style="margin-bottom: 0">
+						<li>Làm giao diện bằng HTML, CSS, JQuery và Boostrap.</li>
+						<li>Làm API bằng Java Spring Boot</li>
+						<li>Quản lý mã nguồn bằng Git và GitHub</li>
+						<li>Database: MySQL</li>
+					</ul>
+					<p style="margin: 3px">
+						<span><strong>Link GitHub dự án:</strong> <a style="text-decoration: none;" href="https://bit.ly/billiards-app">bit.ly/billiards-app</a></span>
+					</p>
+					<p style="margin: 3px">
+						<span><strong>Kinh nghiệm thu được:</strong></span>
+					</p>
+					<ul>
+						<li>Vận dụng được kiến thức về jQuery và Ajax, kết hợp với HTML và CSS để làm giao diện cho website</li>
+						<li>Triển khai được validation phía front-end và phía back-end</li>
+						<li>Hiểu được cách dùng RESTfull API</li>
+						<li>Biết cách sử dụng DTO để thao tác với dữ liệu</li>
+					</ul>
+				</div>
+				<div style="border-top: 0.5px solid grey; margin-top: 10px">
+					<h5 style="margin-top: 15px">
+						Ứng dụng quản lý xe ô tô
+					</h5>
+					<p style="margin: 3px">
+						<span><strong>Loại dự án:</strong></span> Dự án cá nhân (tháng 08/2023)
+					</p>
+					<p style="margin: 3px">
+						<span><strong>Mô tả dự án:</strong></span>
+					</p>
+					<p style="margin: 3px">
+						Dự án làm quen với ReactJS, cho phép xem danh sách xe, thêm xe, xem chi tiết và xoá xe ra khỏi danh sách.
+					</p>
+					<p style="margin: 3px">
+						<span><strong>Công nghệ sử dụng:</strong></span>
+					</p>
+					<ul style="margin-bottom: 0">
+						<li>Làm giao diện bằng ReactJS</li>
+						<li>Giả lập dữ liệu bằng mockAPI</li>
+						<li>Quản lý mã nguồn bằng Git và GitHub</li>
+					</ul>
+					<p style="margin: 3px">
+						<span><strong>Link deploy dự án:</strong> <a style="text-decoration: none;" href="https://bit.ly/carsapp-reactjs">bit.ly/carsapp-reactjs</a></span>
+					</p>
+					<p style="margin: 3px">
+						<span><strong>Kinh nghiệm thu được:</strong></span>
+					</p>
+					<ul>
+						<li>Vận dụng kiến thức cơ bản của ReactJS: useState, useEffect</li>
+						<li>Tạo được custom hooks</li>
+						<li>Validation dữ liệu với thư viện react-hook-form và yup</li>
+					</ul>
+
+				</div>
+				
+				<div  style="position: absolute; bottom: 0px; margin-left: -75px; height: 40px; display: flex; justify-content: end;" class="col-12">
+					<span style="margin-right: 75px; opacity: 0.7;">Trang 3/4</span>
+				</div>
+
+			</div>
+
+			<div class="page" style="padding: 75px; border: 0.5px solid; position: relative;">
+				<div>
+					<h5 style="margin-top: 15px">
+						Ứng dụng mua điện thoại online
+					</h5>
+					<p style="margin: 3px">
+						<span><strong>Loại dự án:</strong></span> Dự án cá nhân (tháng 03/2023)
+					</p>
+					<p style="margin: 3px">
+						<span><strong>Mô tả dự án:</strong></span>
+					</p>
+					<p style="margin: 3px">
+						Dự án làm quen với HTML, CSS và JavaScripts mô phỏng shop bán điện thoại online. Người dùng có thể xem danh sách điện thoại, thêm, xoá điện thoại ra khỏi giỏ hàng.
+					</p>
+					<p style="margin: 3px">
+						<span><strong>Công nghệ sử dụng:</strong></span>
+					</p>
+					<ul style="margin-bottom: 0">
+						<li>Làm giao diện bằng HTML, CSS và JavaScripts</li>
+						<li>Lập trình hướng đối tượng (OPP)</li>
+						<li>Quản lý mã nguồn bằng Git và GitHub</li>
+					</ul>
+					<p style="margin: 3px">
+						<span><strong>Link deploy dự án:</strong> <a style="text-decoration: none;" href="https://bit.ly/mobiles-shop">bit.ly/mobiles-shop</a></span>
+					</p>
+					<p style="margin: 3px">
+						<span><strong>Kinh nghiệm thu được:</strong></span>
+					</p>
+					<ul>
+						<li>Hiểu được các kiến thức lập trình cơ bản với HTML, CSS và JavaScript</li>
+						<li>Hiểu được kiến thức cơ bản về lập trình hướng đối tượng</li>
+					</ul>
+
+				</div>
+				<div class="reference" style="border-top: 1px solid gray; margin-top: 10px;">
+					<div class="my-background " style="width: 200px; margin: 10px 0px; ">
+						<h4  style=" line-height: 35px; margin-left: 8px;">Người tham chiếu</h4>
+					</div>
+					<ul style="list-style: disc; margin-left: -10px;">
+						<li>Anh: Nguyễn Hữu Anh Khoa</li>
+							<li> Chức vụ: Giám đốc đào tạo CodeGym Huế</li>
+							<li>Điện thoại: 0935 216 417</li>
+							<li>Email: khoa.nguyen@codegym.vn</li>
+						</li>
+					</ul>
+				</div>
+				<div  style="position: absolute; bottom: 0px; margin-left: -75px; height: 40px; display: flex; justify-content: end;" class="col-12">
+					<span style="margin-right: 75px; opacity: 0.7;">Trang 4/4</span>
+				</div>
 			</div>
 
 		<script
